@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">بكم؟</string>
+    <string name="programmer_credit">المبرمج احمد امليمدي</string>
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_camera">كاميرا</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="markets_title">بكم :</string>
+    <string name="add_product">إضافة منتج</string>
+    <string name="product_name_hint">اسم المنتج</string>
+    <string name="price_hint">السعر (دينار)</string>
+    <string name="save">حفظ</string>
+    <string name="cancel">إلغاء</string>
+    <string name="no_products">لا توجد منتجات\nاضغط + لإضافة منتج</string>
+    <string name="product_not_found">هذا المنتج غير مُضاف</string>
+    <string name="product_found">تم التعرف على المنتج</string>
+    <string name="capture_product">صوّر المنتج</string>
+    <string name="retrieve_product">استرداد منتج</string>
+    <string name="size_small">صغير</string>
+    <string name="size_medium">متوسط</string>
+    <string name="size_large">كبير</string>
+    <string name="size_none">بدون</string>
+    <string name="wholesale_q">هل تريد إضافة مجموعة (جملة)؟</string>
+    <string name="settings">الإعدادات</string>
+    <string name="language">اللغة</string>
+    <string name="theme">وضع الشاشة</string>
+    <string name="font_size">حجم الخط</string>
+    <string name="help">المساعدة</string>
+    <string name="contact_dev">تواصل مع المبرمج</string>
+    <string name="light_mode">مشمس</string>
+    <string name="dark_mode">مظلم</string>
+</resources>

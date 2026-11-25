@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Light Theme (مشمس) - White + Light Blue -->
+    <style name="Theme.Bakam" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_dark</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">@color/color_accent</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorOnBackground">@color/color_on_background</item>
+        <item name="android:windowBackground">@color/color_background</item>
+        <item name="android:statusBarColor">@color/color_primary</item>
+        <item name="android:navigationBarColor">@color/color_surface</item>
+        <item name="android:textColorPrimary">@color/color_on_surface</item>
+        
+    </style>
+
+    <!-- Dark Theme (مظلم) - Dark Blue + Dark Green -->
+    <style name="Theme.Bakam.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#1E3A5F</item>
+        <item name="colorPrimaryVariant">#152940</item>
+        <item name="colorOnPrimary">#E8F0FE</item>
+        <item name="colorSecondary">#1A7A44</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSurface">#162336</item>
+        <item name="colorOnSurface">#E8F0FE</item>
+        <item name="android:colorBackground">#0D1B2A</item>
+        <item name="colorOnBackground">#E8F0FE</item>
+        <item name="android:windowBackground">#0D1B2A</item>
+        <item name="android:statusBarColor">#1E3A5F</item>
+        <item name="android:navigationBarColor">#162336</item>
+        <item name="android:textColorPrimary">#E8F0FE</item>
+        
+    </style>
+
+</resources>

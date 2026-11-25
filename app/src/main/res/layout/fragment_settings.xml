@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/color_primary"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_settings_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الإعدادات"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif-medium"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+
+        <!-- Settings cards -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="24dp">
+
+            <!-- Language Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/color_surface"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_language_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="اللغة"
+                        android:textSize="13sp"
+                        android:textColor="@color/color_on_surface_variant"
+                        android:fontFamily="sans-serif"
+                        android:gravity="end"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_arabic"
+                            android:layout_width="0dp"
+                            android:layout_height="44dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="6dp"
+                            android:text="عربي"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif"
+                            app:cornerRadius="10dp"
+                            app:backgroundTint="@color/color_primary"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_english"
+                            android:layout_width="0dp"
+                            android:layout_height="44dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="6dp"
+                            android:text="ENGLISH"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif"
+                            app:cornerRadius="10dp"
+                            app:backgroundTint="@color/color_surface"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Theme Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/color_surface"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_theme_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="وضع الشاشة"
+                        android:textSize="13sp"
+                        android:textColor="@color/color_on_surface_variant"
+                        android:fontFamily="sans-serif"
+                        android:gravity="end"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- Light -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginEnd="6dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn_light"
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:text="مشمس"
+                                android:textSize="13sp"
+                                android:fontFamily="sans-serif"
+                                app:cornerRadius="10dp"
+                                app:backgroundTint="@color/color_primary"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="أبيض + أزرق فاتح"
+                                android:textSize="10sp"
+                                android:textColor="@color/color_on_surface_variant"
+                                android:gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="sans-serif"/>
+                        </LinearLayout>
+
+                        <!-- Dark -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="6dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn_dark"
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:text="مظلم"
+                                android:textSize="13sp"
+                                android:fontFamily="sans-serif"
+                                app:cornerRadius="10dp"
+                                app:backgroundTint="@color/color_surface"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="أزرق غامق + أخضر"
+                                android:textSize="10sp"
+                                android:textColor="@color/color_on_surface_variant"
+                                android:gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="sans-serif"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Font Size Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/color_surface"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_font_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="حجم الخط"
+                        android:textSize="13sp"
+                        android:textColor="@color/color_on_surface_variant"
+                        android:fontFamily="sans-serif"
+                        android:gravity="end"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_font_small"
+                            android:layout_width="0dp"
+                            android:layout_height="44dp"
+                            android:layout_weight="1"
+                            android:layout_marginHorizontal="3dp"
+                            android:text="صغير"
+                            android:textSize="11sp"
+                            android:fontFamily="sans-serif"
+                            app:cornerRadius="10dp"
+                            app:backgroundTint="@color/color_surface"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_font_medium"
+                            android:layout_width="0dp"
+                            android:layout_height="44dp"
+                            android:layout_weight="1"
+                            android:layout_marginHorizontal="3dp"
+                            android:text="متوسط"
+                            android:textSize="13sp"
+                            android:fontFamily="sans-serif"
+                            app:cornerRadius="10dp"
+                            app:backgroundTint="@color/color_primary"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_font_large"
+                            android:layout_width="0dp"
+                            android:layout_height="44dp"
+                            android:layout_weight="1"
+                            android:layout_marginHorizontal="3dp"
+                            android:text="كبير"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif"
+                            app:cornerRadius="10dp"
+                            app:backgroundTint="@color/color_surface"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Help Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/color_surface"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_help_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="المساعدة"
+                        android:textSize="13sp"
+                        android:textColor="@color/color_on_surface_variant"
+                        android:fontFamily="sans-serif"
+                        android:gravity="end"
+                        android:layout_marginBottom="10dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_help"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="تواصل مع المبرمج"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif"
+                        android:drawableStart="@drawable/ic_whatsapp"
+                        android:drawablePadding="8dp"
+                        app:cornerRadius="12dp"
+                        app:backgroundTint="@color/whatsapp_green"/>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Footer -->
+            <TextView
+                android:id="@+id/tv_settings_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="المبرمج احمد امليمدي"
+                android:textSize="11sp"
+                android:textColor="@color/color_on_surface_variant"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

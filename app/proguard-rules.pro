@@ -1,0 +1,3 @@
+-keep class com.webkam.app.data.model.** { *; }
+-keepattributes *Annotation*
+-dontwarn kotlinx.**
